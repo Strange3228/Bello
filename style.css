@@ -134,6 +134,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0px 20px;
   }
   .navbar .navbar__collapse {
     display: none;
@@ -328,6 +329,12 @@
   line-height: 19px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 220px) {
+  .poster__btn {
+    width: 95%;
+  }
 }
 
 .info {
@@ -603,6 +610,10 @@
   background-color: white;
 }
 
+.cards-wrapper .cards .cards-flexed .cards__card img {
+  max-width: 100%;
+}
+
 .cards-wrapper .cards .cards-flexed .cards__card .cards__title {
   font-size: 24px;
   line-height: 26px;
@@ -656,6 +667,12 @@
   }
 }
 
+@media (max-width: 470px) {
+  .umbrella {
+    width: 100% !important;
+  }
+}
+
 .cards2 {
   background: #363839;
 }
@@ -686,9 +703,10 @@
 
 .cards2 .cards .cards-flexed .cards__card .img-wrapper .confetti {
   position: absolute;
-  top: -210%;
+  top: -100%;
   left: 50%;
   z-index: -1;
+  max-width: 200px;
 }
 
 .cards2 .cards .cards-flexed .cards__card .img-wrapper .back-circle {
@@ -750,6 +768,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
 }
 
 .kards .kards__card .kards__title {
@@ -852,12 +871,18 @@
   fill: #007189;
 }
 
+@media (max-width: 460px) {
+  .kards__card {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 .get-started__wrapper {
   position: relative;
   background-color: #e5f3fe;
   z-index: 1;
   padding: 10px 0px;
-  overflow: hidden;
 }
 
 .get-started__wrapper .boy-with-cup {
@@ -872,6 +897,7 @@
   bottom: 0;
   left: 0%;
   z-index: -1;
+  max-width: 90%;
 }
 
 .get-started__wrapper .get-started {
@@ -1007,6 +1033,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #1d253c;
+}
+
+@media (max-width: 270px) {
+  .contacts-input {
+    width: 95% !important;
+  }
 }
 
 .footer {

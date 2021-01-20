@@ -64,5 +64,8 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 270px) {
+  .contacts-input {
+    width: 95% !important;
+  }
 }

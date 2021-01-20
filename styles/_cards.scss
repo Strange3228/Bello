@@ -40,6 +40,9 @@
         flex-direction: column;
         flex: 1;
         background-color: white;
+        img {
+          max-width: 100%;
+        }
         .cards__title {
           font-size: 24px;
           line-height: 26px;
@@ -89,6 +92,11 @@
     display: none !important;
   }
 }
+@media (max-width: 470px) {
+  .umbrella {
+    width: 100% !important;
+  }
+}
 
 .cards2 {
   background: #363839;
@@ -113,9 +121,10 @@
           z-index: 1;
           .confetti {
             position: absolute;
-            top: -210%;
+            top: -100%;
             left: 50%;
             z-index: -1;
+            max-width: 200px;
           }
           .back-circle {
             position: absolute;

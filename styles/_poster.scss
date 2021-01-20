@@ -73,3 +73,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@media (max-width: 220px) {
+  .poster__btn {
+    width: 95%;
+  }
+}
