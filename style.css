@@ -651,6 +651,9 @@
   .cards-wrapper .back-path {
     display: none;
   }
+  .confetti {
+    display: none !important;
+  }
 }
 
 .cards2 {
