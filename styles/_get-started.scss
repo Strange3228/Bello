@@ -1,0 +1,40 @@
+.get-started__wrapper {
+  position: relative;
+  background-color: #e5f3fe;
+  z-index: 1;
+  .boy-with-cup {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    z-index: -1;
+  }
+  .man-with-umbrella {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    z-index: -1;
+  }
+  .get-started {
+    min-height: 382px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .get-started__title {
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 52px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #1d253c;
+    }
+    .get-started__subtitle {
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 30px;
+      margin-bottom: 50px;
+      text-align: center;
+      color: #676562;
+    }
+  }
+}

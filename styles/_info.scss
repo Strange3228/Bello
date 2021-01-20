@@ -1,0 +1,134 @@
+.info {
+  min-height: 645px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .info__img-wrapper {
+    background-color: white;
+    position: relative;
+    .info__legend {
+      position: absolute;
+      font-size: 16px;
+      line-height: 19px;
+      bottom: -20px;
+      transform: translateY(20px);
+      left: 0;
+      color: #5a6482;
+      span {
+        color: #f46752;
+      }
+    }
+  }
+  .info__texts {
+    max-width: 450px;
+  }
+}
+.info__title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 52px;
+  color: #1d253c;
+  margin-bottom: 35px;
+}
+.info__subtitle {
+  font-size: 19px;
+  line-height: 30px;
+  color: #5a6482;
+  margin-bottom: 35px;
+}
+
+.info__btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #126f86;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  svg path {
+    fill: #126f86;
+  }
+}
+
+.stats-wrapper {
+  background: #f9f5f2;
+  .stats {
+    .info__img-wrapper {
+      padding: 30px;
+    }
+  }
+}
+
+.helpOffer1 {
+  min-height: 822px;
+  background: white;
+  .info__img-wrapper {
+    z-index: 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 150px;
+      width: 220px;
+      top: 0;
+      left: 0;
+      transform: translate(-30%, -40%);
+      z-index: -1;
+      background-image: url("./img/back-circle.svg");
+      background-position: center;
+      background-size: cover;
+    }
+    &::after {
+      content: "There's also human help 👋";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 28px;
+      color: #1d253c;
+      padding: 20px 25px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: -2px 2px 5px rgba(138, 138, 138, 0.2);
+      transform: translate(-10%, 40%);
+    }
+  }
+}
+
+.helpOffer2 {
+  min-height: 822px;
+  background: #f9f5f2;
+  .info__img-wrapper {
+    z-index: 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 150px;
+      width: 220px;
+      top: 0;
+      left: 0;
+      transform: translate(-30%, -40%);
+      z-index: -1;
+      background-image: url("./img/back-circle.svg");
+      background-position: center;
+      background-size: cover;
+    }
+    &::after {
+      content: "Nerd out in our Learning Center 🤓";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 28px;
+      color: #1d253c;
+      padding: 20px 25px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 3px 5px rgba(138, 138, 138, 0.2);
+      transform: translate(40%, 40%);
+    }
+  }
+}

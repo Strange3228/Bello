@@ -1,0 +1,14 @@
+.footer {
+  background-color: #f8f8f8;
+  .footer__items {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      color: #5a6482;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.kards {
+  min-height: 616px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  .kards__card {
+    padding: 40px 20px;
+    height: 325px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .kards__title {
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 42px;
+      flex: 1;
+      min-height: 100px;
+    }
+    .kards__subtitle {
+      display: flex;
+      align-items: flex-start;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      flex: 3;
+      color: #5a6482;
+    }
+    .info__btn {
+      flex: 1;
+    }
+  }
+}
+
+.kards__card--blue {
+  background-color: rgba(169, 216, 255, 0.3);
+  .kards__title {
+    color: #7cafdd;
+  }
+  .kards__subtitle {
+    color: #5a6482;
+  }
+  .info__btn {
+    color: #7cafdd;
+    svg {
+      path {
+        fill: #6eb0e1;
+      }
+    }
+  }
+}
+.kards__card--yellow {
+  background-color: rgba(255, 174, 104, 0.3);
+  .kards__title {
+    color: #e79751;
+  }
+  .info__btn {
+    color: #e79751;
+    svg {
+      path {
+        fill: #f4943f;
+      }
+    }
+  }
+}
+.kards__card--red {
+  background-color: rgba(250, 83, 64, 0.3);
+  .kards__title {
+    color: #fa5240;
+  }
+  .info__btn {
+    color: #fa5240;
+    svg {
+      path {
+        fill: #ff3f31;
+      }
+    }
+  }
+}
+.kards__card--grey {
+  background-color: rgba(18, 112, 133, 0.3);
+  .kards__title {
+    color: #126f85;
+  }
+  .info__btn {
+    color: #126f85;
+    svg {
+      path {
+        fill: #007189;
+      }
+    }
+  }
+}
