@@ -12,16 +12,31 @@
 <body>
     <nav class="navbar">
         <img src="./img/logo.png" alt="" class="navbar__logo">
-        <ul class="navbar__items">
+        <ul class="navbar__items navbar__collapse">
             <li class="navbar__item">Life insurance</li>
             <li class="navbar__item navbar__item--active">Why Bello</li>
             <li class="navbar__item">Help</li>
         </ul>
-        <div class="navbar__buttons-wrapper">
+        <div class="navbar__buttons-wrapper navbar__collapse">
             <button class="navbar__button">Log in</button>
             <button class="navbar__button navbar__button--active">Get my price</button>
         </div>
+        <button id="menu-toggler" data-class="menu-active" class="hamburger">
+            <span class="hamburger-line hamburger-line-top"></span>
+            <span class="hamburger-line hamburger-line-middle"></span>
+            <span class="hamburger-line hamburger-line-bottom"></span>
+        </button>
     </nav>
+    <div class="navbar__small-screen small-screen-nav">
+        <ul class="navbar__items">
+            <li class="navbar__item">Life insurance</li>
+            <li class="navbar__item navbar__item--active">Why Bello</li>
+            <li class="navbar__item">Help</li>
+            <hr>
+            <button class="navbar__button">Log in</button>
+            <button class="navbar__button navbar__button--active">Get my price</button>
+        </ul>
+    </div>
 
     <section class="poster">
         <img src="./img/poster-img.png" alt="" class="poster__img">
@@ -258,5 +273,11 @@
             <button class="navbar__button navbar__button--active">Get my price</button>
         </div>
     </footer>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+              crossorigin="anonymous"></script>
+    <script src="./js/nav-collapse.js"></script>
 </body>
 </html>

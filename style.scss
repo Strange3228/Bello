@@ -15,6 +15,11 @@
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+  }
+}
 
 @import "./styles/nav";
 @import "./styles/poster";

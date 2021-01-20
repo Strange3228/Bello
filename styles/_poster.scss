@@ -41,6 +41,24 @@
   }
 }
 
+@media (max-width: 800px) {
+  .poster {
+    padding: 0 20px;
+    .poster__img {
+      left: 20px;
+    }
+    .poster__texts {
+      .poster__title {
+        text-shadow: 0px 0px 5px white;
+      }
+      .poster__subtitle {
+        text-shadow: 0px 0px 3px white;
+        color: #444b5f;
+      }
+    }
+  }
+}
+
 .poster__btn {
   margin-top: 40px;
   height: 61px;

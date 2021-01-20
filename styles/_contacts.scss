@@ -2,6 +2,8 @@
   margin-top: 70px;
   margin-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   .contacts__main {
     flex: 3;
     .contacts__main-text {
@@ -43,6 +45,7 @@
     }
   }
   .contacts__list {
+    min-width: 150px;
     flex: 1;
     list-style: none;
     .contacts__list-item {
@@ -59,4 +62,7 @@
       color: #1d253c;
     }
   }
+}
+
+@media (max-width: 1000px) {
 }
