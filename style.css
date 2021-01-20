@@ -857,6 +857,7 @@
   background-color: #e5f3fe;
   z-index: 1;
   padding: 10px 0px;
+  overflow: hidden;
 }
 
 .get-started__wrapper .boy-with-cup {
